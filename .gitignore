@@ -1,0 +1,18 @@
+# KiCad の自動バックアップ
+*-backups/
+*.kicad_sch-bak
+_autosave-*
+\#auto_saved_files\#
+
+# キャッシュとローカル設定
+fp-info-cache
+*.kicad_prl
+
+# Freerouting の中間ファイルと古いネットリスト
+*.dsn
+*.ses
+*.rules
+*.net
+
+# ガーバー（Releases に添付する）
+gbr_*
