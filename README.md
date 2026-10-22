@@ -22,6 +22,11 @@
 回路図は [gamma_turret.pdf](./gamma_turret.pdf)、部品表は [bom.csv](./bom.csv)、3D は [gamma_turret.step](./gamma_turret.step)。
 設計時の検討は [docs/](./docs/) に、旧 STM32 版の設計は [old_design/](./old_design/) に残している。
 
+## v1.0 の注意
+
+- 未配線 1 箇所をジャンパで対応している（D1 のアノード側。[docs/2026-10-18-v1.0-power-on.md](./docs/2026-10-18-v1.0-power-on.md)）
+- Stamp-P4 の USB-C から基板の 5V 系へ電流が流れる。USB だけで 5V 系（CAN トランシーバ、LED、UART）は動く。24V と USB を同時につないでも実用上は問題ないが、設計意図ではないため改版で逆流防止を入れる予定
+
 ## ライセンス
 
 © Rabbits Robotics、[CERN-OHL-P-2.0](./LICENSE)。
